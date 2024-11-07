@@ -1,0 +1,61 @@
+/*This is a comment in CSS, I use them often for notes*/
+
+/*Clearing out browser default style*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Mobile and Global First*/
+
+body {
+    background-image: url(http://placepattern.com/940/300);
+    color: cadetblue;
+    font-family: arial, sans-serif;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 10px solid yellowgreen;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: yellow;
+}
+
+/*Devices wider than phones: these are changes you want to make once the width gets wider*/
+
+@media only screen and (min-width: 481px) {
+    
+    body {
+        margin: 40px;
+    }
+    
+    h1 {
+        text-align: left;
+    }
+    
+    /*ADDED FLEXBOX to make two columns*/
+    
+    .container {
+        display: flex;
+    }
+    
+    /*ADDED to customize the width and spacing*/
+    
+    .column1 {
+        width: 70%; 
+        padding-right: 20px;
+    }
+    
+} /*end media query*/

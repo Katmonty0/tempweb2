@@ -1,0 +1,136 @@
+/*Mobile and Global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style:none;
+}
+
+body {
+    background-color: white;
+    color: deeppink;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Recursive', sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#ordering {
+    text-align: center;
+}
+
+nav#ordering a {
+    background-color: mintcream;
+    display: block;
+}
+
+nav#ordering a:hover {
+    background-color: deeppink;
+    color: coral;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+nav#side-to-side a {
+    display: block;
+    text-align: center
+}
+
+nav#side-to-side a:hover {
+    background-color: deeppink;
+    color: antiquewhite;
+}
+
+aside {
+    background-color: mediumaquamarine;
+    padding: 20px;
+}
+
+main {
+    background-color: lightpink;
+    padding: 20px;
+}
+
+#thumbnails img {
+    width: 100%;
+}
+
+/*wider than mobile*/
+
+@media only screen and (min-width: 481px) {
+    
+    nav#ordering {
+        background-color: white;
+    }
+    
+    nav#ordering ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #logo {order: 2;}
+    #home-link {order: 0;}
+    #about-link {order: 1;}
+    #clients-link {order: 3;}
+    #contact-link {order: 4;}
+    
+    .container {
+        display: flex;
+    }
+    
+    aside {
+        width: 30%;
+    }
+    
+    main {
+        width: 70%;
+    }
+    
+    #thumbnails {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+    
+    #thumbnails img {
+        align-self: center;
+        width: 30%;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 10px;
+    }
+    
+    nav#side-to-side ul {
+        display: flex;
+    }
+    
+    nav#side-to-side li {
+        margin-left: 5px;
+    }
+    
+}/*end media query*/
